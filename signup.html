@@ -27,7 +27,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="https://login.binary.com/templates/default/styles/ui.min.css" />
     <link rel="stylesheet" type="text/css" media="all" href="update.css" />
     <link rel="stylesheet" type="text/css" media="all" href="login-form.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="language.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="signup.css" />
     <!--[if IE 6]>
 <link rel="stylesheet" type="text/css" media="all" href="/templates/default/styles/ie6-fixes.css"/><![endif]-->
     <!--[if IE 7]>
@@ -55,7 +55,7 @@
     <script type="text/javascript" src="https://login.binary.com/templates/default/js/functions.js"></script>
     <script type="text/javascript" src="https://login.binary.com/templates/default/js/chart-colors.js"></script>
     <script type="text/javascript" src="https://login.binary.com/lib/highCharts/highcharts.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600&display=swap&subset=cyrillic,vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,600&display=swap&subset=cyrillic,vietnamese" rel="stylesheet">
     <script type="text/javascript">
         // <!--
         // Frame buster
@@ -78,7 +78,6 @@
 
 <body id="page_login">
     <!-- brand header -->
-    
     <div class="deriv-header">
         <div class="branding">
             <div class="deriv-logo">
@@ -196,39 +195,80 @@
             <div class="section">
 
 
-                <!-- login box -->
-                <div class="login-box">
-                    <div class="login-box-content">
-                        <div class="login-form">
-                            <h2>Log in using your email</h2>
-                            <form action="/" method="post">
-                                <div class="float-container">
-                                    <label for="address">Username</label>
-                                    <input class="text" type="text" name="username" value="" data-placeholder="Please enter your username" required />
-                                </div>
-                                <div class="float-container">
-                                    <label for="amount">Password</label>
-                                    <input class="text" type="password" name="password" data-placeholder="Please enter password" required>
-                                </div>
-                                <div class="forgot-pass">
-                                    <a href="/password-reset.php" title="">Forgotten Username or Password?</a> 
-                                </div>
-                                <div class="login-btn">
-                                    <button type="submit">Login</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="login-divider"></div>
-                        <div class="signup-note">
-                            <h2>Join our partner programme</h2>
-                            <p>Sign up to create your account today.</p>
-                            <div class="signup-btn">
-                                <button type="submit">Sign up</button>
-                            </div>
-                        </div>
+                <!-- signup box -->
+                <div class="signup-box">
+                    <div class="sugnup-box-header">
+                        <h2>We’re glad you’re here</h2>
+                        <p>Complete this form to sign up for our partner programme.</p>
+                        <p>Already have an affiliate account? <a href="">Log in</a></p>
                     </div>
+                    <form action="/" method="post">
+                        <div class="float-container">
+                            <label for="username">Username</label>
+                            <input class="text" type="text" name="username" value="" autocomplete="off" data-placeholder="Please enter your username" required />
+                        </div>
+                        <div class="float-container">
+                            <label for="password">Password</label>
+                            <input class="text" type="password" name="password" data-placeholder="Please enter password" required>
+                        </div>
+                        <div class="float-container">
+                            <label for="confirm-pass">Confirm Password</label>
+                            <input class="text" type="password" name="password" data-placeholder="Please confirm password" required>
+                        </div>
+                        <div class="float-container">
+                            <label for="email">Email address</label>
+                            <input class="text" type="text" name="email" value="" autocomplete="off" data-placeholder="Please enter your email address" required />
+                        </div>
+                        <div class="float-container">
+                            <label for="firstname">First name</label>
+                            <input class="text" type="text" name="firstname" data-placeholder="Please enter your name" required>
+                        </div>
+                        <div class="float-container">
+                            <label for="lastname">Last name</label>
+                            <input class="text" type="text" name="lastname" data-placeholder="Please enter your last name" required>
+                        </div>
+                        <div class="float-container">
+                            <label for="company">Company name</label>
+                            <input class="text" type="text" name="company" value="" autocomplete="off" data-placeholder="Please enter your company name" required />
+                        </div>
+                        <div class="float-container">
+                            <label for="companynumber">Company registration number</label>
+                            <input class="text" type="text" name="companynumber" data-placeholder="Please enter company registration number" required>
+                        </div>
+                        <div class="float-container">
+                            <label for="mobile">Mobile number</label>
+                            <input class="text" type="mobile" name="text" data-placeholder="Please enter mobile number including country code" required>
+                        </div>
+                        <div class="float-container">
+                            <label for="address">Address</label>
+                            <input class="text" type="text" name="address" value="" autocomplete="off" data-placeholder="Please enter your address" required />
+                        </div>
+                        <div class="float-container">
+                            <label for="city">Town/City</label>
+                            <input class="text" type="text" name="city" data-placeholder="Please enter your town / city" required>
+                        </div>
+                        <div class="float-container">
+                            <label for="state">State/Province</label>
+                            <input class="text" type="text" name="state" data-placeholder="Please enter your state" required>
+                        </div>
+                        <div class="float-container">
+                            <label for="zip">Postal/ZIP code</label>
+                            <input class="text" type="text" name="zip" value="" autocomplete="off" data-placeholder="Please enter your postal/ZIP code" required />
+                        </div>
+                        <div class="float-container">
+                            <label for="skype">Skype ID</label>
+                            <input class="text" type="text" name="skype" data-placeholder="Please enter your skype ID (Optional)">
+                        </div>
+                        <div class="float-container">
+                            <label for="state">Link to your site where you’ll be promoting us</label>
+                            <input class="text" type="text" name="state" data-placeholder="Please enter link to your site" required>
+                        </div>
+                        <div class="login-btn">
+                            <button type="submit">Sign up</button>
+                        </div>
+                    </form>
                 </div>
-                <!-- ./ login box -->
+                <!-- ./ signup box -->
 
 
             </div>

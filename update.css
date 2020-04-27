@@ -9,6 +9,7 @@
     height: 104px;
     background-color: #0e0e0e;
     display: grid;
+    grid-template-columns: 1fr 200px;
     align-items: center;
 }
 .branding {
