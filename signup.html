@@ -227,6 +227,12 @@
                             <label for="lastname">Last name</label>
                             <input class="text" type="text" name="lastname" data-placeholder="Please enter your last name" required>
                         </div>
+                        <div class="float-radio">
+                            radio buttons
+                        </div>
+                        <div class="float-container-note">
+                            If you're signing up as a company, please provide your company name and registration number.
+                        </div>
                         <div class="float-container">
                             <label for="company">Company name</label>
                             <input class="text" type="text" name="company" value="" autocomplete="off" data-placeholder="Please enter your company name" required />
@@ -239,6 +245,7 @@
                             <label for="mobile">Mobile number</label>
                             <input class="text" type="mobile" name="text" data-placeholder="Please enter mobile number including country code" required>
                         </div>
+                        <div class="float-container-note">Including country code E.g. +xxx xxxxxxxx​</div>
                         <div class="float-container">
                             <label for="address">Address</label>
                             <input class="text" type="text" name="address" value="" autocomplete="off" data-placeholder="Please enter your address" required />
@@ -260,8 +267,23 @@
                             <input class="text" type="text" name="skype" data-placeholder="Please enter your skype ID (Optional)">
                         </div>
                         <div class="float-container">
-                            <label for="state">Link to your site where you’ll be promoting us</label>
-                            <input class="text" type="text" name="state" data-placeholder="Please enter link to your site" required>
+                            <label for="promotionlink">Link to your site where you’ll be promoting us</label>
+                            <input class="text" type="text" name="promotionlink" data-placeholder="Please enter link to your site" required>
+                        </div>
+                        <div class="float-container-note">Your website, social network, channel, etc.​</div>
+                        <div class="float-container">
+                            <label for="promotionplans">Tell us your plans to promote us</label>
+                            <textarea rows="10" name="promotionplans" data-placeholder="Please tell us your plans to promote us" required></textarea>
+                        </div>
+                        <div class="signup-form-links">
+                            <label class="container">I’d like to receive promotional emails.
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">I have read and agree to the <a href="">t​erms and conditions</a>​.
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                              </label>
                         </div>
                         <div class="login-btn">
                             <button type="submit">Sign up</button>

@@ -25,6 +25,14 @@
 	color: #ff444f;
 	border-color: #ff444f;
 }
+.float-container-note {
+	margin-top: -28px;
+	margin-bottom: 20px;
+	font-size: 12px;
+	line-height: 18px;
+	padding-left: 15px;
+	color: #999999;
+}
 
 .float-container input {
 	border: none;
@@ -81,4 +89,20 @@ input[type=number] {
     font-size: 12px;
     text-align: left;
     color: #ff444f;
+}
+.float-radio {
+	position: relative;
+	font-size: 14px;
+	margin-bottom: 30px;
+    transition: all 0.25s ease-in-out;
+}
+.float-container textarea {
+	border: none;
+	-webkit-appearance: none;
+	font-size: 14px;
+	font-weight: normal;
+	outline: 0;
+	padding: 10px 12px;
+	width: 100%;
+	margin: 0;
 }
