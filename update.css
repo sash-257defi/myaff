@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+/* Header */
+.deriv-header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 104px;
+    background-color: #0e0e0e;
+    display: grid;
+    align-items: center;
+}
+.branding {
+    display: grid;
+    grid-template-columns: 170px 2px 170px 2px 1fr;
+    column-gap: 20px;
+    align-items: center;
+}
+.logo-divider {
+    width: 1px;
+    height: 40px;
+    background-color: #979797;    
+}
+.header-title {
+    font-size: 24px !important;
+    line-height: 36px;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+}
+.header-stack-branding {
+    display: grid;
+    grid-template-columns: 70px 70px 1fr;
+    align-items: center;
+}
+.mobile-branding {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    align-items: center;
+    justify-items: center;
+}
+.mobile-branding .logo {
+    width: 80px;
+}
+.mobile-header-title {
+    margin-top: 20px;
+    font-size: 24px !important;
+    line-height: 36px;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+}
+.login-box {
+    border-radius: 4px;
+    box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.08), 0 0 16px 0 rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    padding: 48px;
+    width: 958px;
+    max-width: 100%;
+    margin: 100px auto;
+}
+.login-box-content {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 48px;
+}
+.login-form {
+    text-align: center;
+}
+h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 28px !important;
+    font-weight: bold !important;
+    line-height: 1.25 !important;
+    color: #333333 !important;
+    margin: 0 !important;
+}
+.login-divider {
+    background-color: #979797;
+}
+.forgot-pass {
+    font-size: 14px;
+    text-align: right;
+}
+.forgot-pass a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff444f !important;
+    text-align: right;
+}
+.login-btn {
+    margin: 0;
+    padding: 0;
+}
+.login-btn button {
+    width: 100%;
+}
+.signup-note {
+    text-align: center;
+    align-self: center;
+}
+.signup-btn {
+    margin-top: 15px;
+}
+.signup-btn button {
+    width: 100%;
+    max-width: 314px;
+}
+@media screen and (max-width: 768px)  {
+    .branding {
+        display: none;
+    }
+    .login-box {
+        width: 500px;
+        max-width: 100%;
+        margin: 0 auto 40px;
+    }
+    .login-box-content {
+        grid-template-columns: 1fr;
+    }
+    .login-divider {
+        height: 1px;
+    }
+}
+/* Overwrite */
+*, html, body, h1, h2, h3, h4, h5, h6, p {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+button, .button, a.button, input[type=submit] {
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: normal;
+    transition: all 0.25s;
+    font-weight: bold;
+    height: fit-content;
+    color: #ffffff;
+    border-radius: 4px;
+    background-color: #ff444f;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover, .button:hover, input[type=submit]:hover {
+    background-color: #d43e47;
+}
+.header-stack {
+    background-color: #0e0e0e;
+}
+.logo {
+    max-width: 40px;
+}
+.logo-wrapper .binary-logo-text>div {
+    width: 120px;
+    margin-top: 2px;
+}
+/* Mobile menu */
+.pushy-header {
+    background-color: #0e0e0e;
+}

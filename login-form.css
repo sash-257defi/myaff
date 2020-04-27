@@ -1,0 +1,84 @@
+
+/* float container */
+
+.float-container {
+	position: relative;
+	font-size: 14px;
+	border: solid 1px #e8e8e8;
+	font-family: inherit;
+	-webkit-appearance: none;
+	border-radius: 4px;
+	padding: 1px;
+	margin-bottom: 30px;
+	cursor: text;
+    color: #333333;
+    transition: all 0.25s ease-in-out;
+}
+.float-container:hover {
+    border: solid 1px #999999;
+}
+.float-container.active {
+	color: #85acb0;
+	border-color: #85acb0;
+}
+.float-container.error {
+	color: #ff444f;
+	border-color: #ff444f;
+}
+
+.float-container input {
+	border: none;
+	-webkit-appearance: none;
+	font-size: 14px;
+	font-weight: normal;
+	outline: 0;
+	padding: 10px 12px;
+	width: 100%;
+	margin: 0;
+}
+
+.float-container label {
+	font-size: 14px;
+	color: #999999;
+	font-weight: normal;
+	padding: 0 4px;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 10px;
+	transform-origin: top left;
+	transform: translate(0, 0.8rem) scale(1);
+	transition: all 0.25s ease-in-out;
+}
+
+.float-container.active label {
+	transform: translate(0, -8px) scale(0.7);
+	background-color: #ffffff;
+	color: #85acb0;
+}
+.float-container.error label {
+	transform: translate(0, -10px) scale(0.7);
+	background-color: #ffffff;
+	color: #ff444f;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.input-error {
+    position: absolute;
+    top: 70px;
+    display: none;
+    margin-top: -30px;
+    margin-bottom: 60px;
+    font-size: 12px;
+    text-align: left;
+    color: #ff444f;
+}
