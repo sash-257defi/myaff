@@ -334,13 +334,14 @@
   top: 100%;
   left: 0;
   right: 0;
-  border: solid 1px #e8e8e8;
+  border: solid 0px #e8e8e8;
   background: #0e0e0e;
   transition: all 0.25s;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
   z-index: 2;
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.08), 0 0 16px 0 rgba(0, 0, 0, 0.08);
 }
 
 .custom-language-select-wrapper .custom-select.open .custom-options {
