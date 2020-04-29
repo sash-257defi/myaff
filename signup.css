@@ -320,9 +320,9 @@
   color: #999999;
   height: 40px;
   line-height: 40px;
-  background: #ffffff;
+  background: #0e0e0e;
   cursor: pointer;
-  border: solid 1px #e8e8e8;
+  border: solid 1px #d6dadb;
   border-radius: 4px;
 }
 
@@ -333,7 +333,7 @@
   left: 0;
   right: 0;
   border: solid 1px #e8e8e8;
-  background: #ffffff;
+  background: #0e0e0e;
   transition: all 0.25s;
   opacity: 0;
   visibility: hidden;
@@ -353,21 +353,21 @@
   padding: 5px 12px;
   font-size: 14px;
   font-weight: normal;
-  color: #666666;
+  color: #999999;
   line-height: 30px;
   cursor: pointer;
   transition: all 0.25s;
-  border-bottom: solid 1px #eeeded;
+  border-bottom: solid 1px #222222;
 }
 
 .custom-language-select-wrapper .custom-option:hover {
   cursor: pointer;
-  background-color: #e8e8e8;
+  background-color: #333333;
 }
 
 .custom-language-select-wrapper .custom-option.selected {
-  color: #666666;
-  background-color: #eeeeee;
+  color: #999999;
+  background-color: #333333;
 }
 
 .custom-language-select-wrapper .arrow {
@@ -389,13 +389,13 @@
 .custom-language-select-wrapper .arrow::before {
   left: -4px;
   transform: rotate(-45deg);
-  background-color: #666666;
+  background-color: #999999;
 }
 
 .custom-language-select-wrapper .arrow::after {
   left: 4px;
   transform: rotate(45deg);
-  background-color: #666666;
+  background-color: #999999;
 }
 
 .custom-language-select-wrapper .open .arrow::before {
