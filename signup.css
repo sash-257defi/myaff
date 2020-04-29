@@ -243,7 +243,7 @@
 
 .custom-option.selected {
   color: #666666;
-  background-color: #eeeeee;
+  background-color: #ffffff;
 }
 
 .arrow {
@@ -359,7 +359,7 @@
 
 .custom-language-select-wrapper .custom-option.selected {
   color: #999999;
-  background-color: #242828;
+  background-color: #0e0e0e;
 }
 
 .custom-language-select-wrapper .arrow {
