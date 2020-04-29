@@ -35,6 +35,9 @@
     width: 100%;
     min-height: 50px;
 }
+.signup-form-links a {
+  color: #ff444f !important;
+}
 /* The container */
 .container {
     display: block;
@@ -361,12 +364,12 @@
 
 .custom-language-select-wrapper .custom-option:hover {
   cursor: pointer;
-  background-color: #333333;
+  background-color: #242828;
 }
 
 .custom-language-select-wrapper .custom-option.selected {
   color: #999999;
-  background-color: #333333;
+  background-color: #242828;
 }
 
 .custom-language-select-wrapper .arrow {
