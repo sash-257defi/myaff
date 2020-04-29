@@ -168,3 +168,130 @@
    border-radius: 50%;
    background: white;
 }
+
+/* Select */
+/*
+.float-container select {
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  border: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #999999;
+  background-image: url(arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+*/
+.custom-select-wrapper {
+  position: relative;
+  user-select: none;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.custom-select {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-select__trigger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #999999;
+  height: 40px;
+  line-height: 40px;
+  background: #ffffff;
+  cursor: pointer;
+  border: solid 1px #e8e8e8;
+  border-radius: 4px;
+}
+
+.custom-options {
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: solid 1px #e8e8e8;
+  background: #ffffff;
+  transition: all 0.25s;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.custom-select.open .custom-options {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.custom-option {
+  position: relative;
+  display: block;
+  padding: 5px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #666666;
+  line-height: 30px;
+  cursor: pointer;
+  transition: all 0.25s;
+  border-bottom: solid 1px #eeeded;
+}
+
+.custom-option:hover {
+  cursor: pointer;
+  background-color: #e8e8e8;
+}
+
+.custom-option.selected {
+  color: #666666;
+  background-color: #eeeeee;
+}
+
+.arrow {
+  position: relative;
+  height: 11px;
+  width: 11px;
+}
+
+.arrow::before,
+.arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 1px;
+  height: 100%;
+  transition: all 0.15s;
+}
+
+.arrow::before {
+  left: -4px;
+  transform: rotate(-45deg);
+  background-color: #666666;
+}
+
+.arrow::after {
+  left: 4px;
+  transform: rotate(45deg);
+  background-color: #666666;
+}
+
+.open .arrow::before {
+  left: -4px;
+  transform: rotate(45deg);
+}
+
+.open .arrow::after {
+  left: 4px;
+  transform: rotate(-45deg);
+}
