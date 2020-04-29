@@ -173,21 +173,6 @@
 }
 
 /* Select */
-/*
-.float-container select {
-  height: 40px;
-  width: 100%;
-  padding: 10px;
-  border: none !important;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  color: #999999;
-  background-image: url(arrow.svg);
-  background-repeat: no-repeat;
-  background-position: right center;
-}
-*/
 .custom-select-wrapper {
   position: relative;
   user-select: none;
@@ -305,7 +290,11 @@
   user-select: none;
   width: 100%;
 }
-
+@media screen and (max-width: 768px) {
+  .custom-language-select-wrapper {
+    margin: 20px 0;
+  }
+}
 .custom-language-select-wrapper .custom-select {
   display: flex;
   flex-direction: column;
