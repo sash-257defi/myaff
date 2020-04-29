@@ -103,7 +103,7 @@ h2 {
 .signup-btn {
     margin-top: 15px;
 }
-.signup-btn button {
+.signup-btn .button {
     width: 100%;
     max-width: 314px;
 }
