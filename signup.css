@@ -108,68 +108,61 @@
   }
 /* Radio */
 .float-radio {
-    margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+  margin-bottom: 40px;
 }
-  .radio-container {
-    display: inline-block;
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
     position: relative;
-    padding-left: 22px;
-    margin-bottom: 0;
-    margin-right: 30px;
+    padding-left: 25px;
     cursor: pointer;
-    font-size: 14px;
-    font-weight: normal;
-    color: #333333;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  /* Hide the browser's default radio button */
-.radio-container input {
+    line-height: 16px;
+    display: inline-block;
+    color: #666666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
     position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  }
-  /* Create a custom radio button */
-.radio-checkmark {
-    position: absolute;
-    top: 0;
     left: 0;
-    height: 16px;
+    top: 0;
     width: 16px;
-    background-color: #eeeeee;
-    border-radius: 50%;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .radio-container:hover input ~ .radio-checkmark {
-    background-color: #cccccc;
-  }
-  
-  /* When the radio button is checked, add a blue background */
-  .radio-container input:checked ~ .radio-checkmark {
-    background-color: #ff444f;
-  }
-  
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  .radio-checkmark:after {
-    content: "";
+    height: 16px;
+    border: 2px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 3px solid #ff444f;
+    border-radius: 100%;
+    background: #fff;
     position: absolute;
-    display: none;
-  }
-  
-  /* Show the indicator (dot/circle) when checked */
-  .radio-container input:checked ~ .radio-checkmark:after {
-    display: block;
-  }
-  .radio-container .radio-checkmark:after {
-    top: 4px;
-   left: 4px;
-   width: 8px;
-   height: 8px;
-   border-radius: 50%;
-   background: white;
+    top: 0px;
+    left: 0px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 /* Select */
