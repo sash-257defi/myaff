@@ -241,6 +241,11 @@
   background-color: #ffffff;
 }
 
+.custom-option.selected:hover {
+  cursor: pointer;
+  background-color: #e8e8e8;
+}
+
 .arrow {
   position: relative;
   height: 11px;
