@@ -1,0 +1,29 @@
+h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 20px !important;
+    font-weight: bold;
+    line-height: 1.25 ;
+    color: #000000;
+    margin: 0;
+}
+h1, h2 {
+    color: #000000 !important;
+}
+.deriv-faq ul {
+    margin: 30px 0 30px 40px;
+}
+.deriv-faq ul li {
+    margin: 15px 0;
+}
+.deriv-faq a {
+    font-weight: 600;
+    color: #ff444f;
+}
+.deriv-faq img {
+    display: block;
+    margin: 50px 0;
+    max-width: 800px;
+}
+.deriv-faq strong {
+    color: #000000;
+}

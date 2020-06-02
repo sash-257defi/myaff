@@ -44,9 +44,7 @@ const FloatLabel = (() => {
 
 FloatLabel.init();
 
-// document.querySelector('.custom-select-wrapper').addEventListener('click', function () {
-//     this.querySelector('.custom-select').classList.toggle('open');
-// })
+// Select
 
 for (const dropdown of document.querySelectorAll(".custom-select-wrapper, .custom-language-select-wrapper")) {
     dropdown.addEventListener('click', function () {
@@ -63,13 +61,6 @@ for (const option of document.querySelectorAll(".custom-option")) {
         }
     })
 }
-
-// window.addEventListener('click', function (e) {
-//     const select = document.querySelector('.custom-select')
-//     if (!select.contains(e.target)) {
-//         select.classList.remove('open');
-//     }
-// });
 
 window.addEventListener('click', function (e) {
     for (const select of document.querySelectorAll('.custom-select')) {

@@ -98,26 +98,28 @@
             <h1 class="header-title">Affiliate & IB</h1>
         </div>
         <div class="brand-language">
-            <div class="custom-language-select-wrapper">
-                <div class="custom-select">
-                    <div class="custom-select__trigger"><span>Language</span>
-                        <div class="arrow"></div>
-                    </div>
-                    <div class="custom-options">
-                        <span class="custom-option selected" data-value="0">English</span>
-                        <span class="custom-option" data-value="1">Русский</span>
-                        <span class="custom-option" data-value="2">Français</span>
-                        <span class="custom-option" data-value="3">Italiano</span>
-                        <span class="custom-option" data-value="4">Indonesia</span>
-                        <span class="custom-option" data-value="5">Polish</span>
-                        <span class="custom-option" data-value="6">Tiếng Việt</span>
-                        <span class="custom-option" data-value="7">Español</span>
-                        <span class="custom-option" data-value="8">Português</span>
-                        <span class="custom-option" data-value="9">简体中文</span>
-                        <span class="custom-option" data-value="10">繁體中文</span>
+            <form action="/signup.php" method="get" id="langSelect"></form>
+                <div class="custom-language-select-wrapper">
+                    <div class="custom-select">
+                        <div class="custom-select__trigger"><span>Language</span>
+                            <div class="arrow"></div>
+                        </div>
+                        <div class="custom-options" name="lang" id="lang" onchange="this.form.submit()">
+                            <span class="custom-option selected" data-value="0">English</span>
+                            <span class="custom-option" data-value="1">Русский</span>
+                            <span class="custom-option" data-value="2">Français</span>
+                            <span class="custom-option" data-value="3">Italiano</span>
+                            <span class="custom-option" data-value="4">Indonesia</span>
+                            <span class="custom-option" data-value="5">Polish</span>
+                            <span class="custom-option" data-value="6">Tiếng Việt</span>
+                            <span class="custom-option" data-value="7">Español</span>
+                            <span class="custom-option" data-value="8">Português</span>
+                            <span class="custom-option" data-value="9">简体中文</span>
+                            <span class="custom-option" data-value="10">繁體中文</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
     <div class="header-stack shadow">

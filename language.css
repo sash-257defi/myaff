@@ -1,0 +1,115 @@
+/* Language select */
+.custom-language-select-wrapper {
+    position: relative;
+    user-select: none;
+    width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    .custom-language-select-wrapper {
+      margin: 20px 0;
+    }
+  }
+  .custom-language-select-wrapper .custom-select {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .custom-language-select-wrapper .custom-select__trigger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #999999;
+    height: 40px;
+    line-height: 40px;
+    background: #0e0e0e;
+    cursor: pointer;
+    border: solid 1px #d6dadb;
+    border-radius: 4px;
+  }
+  
+  .custom-language-select-wrapper .custom-options {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: solid 0px #e8e8e8;
+    background: #0e0e0e;
+    transition: all 0.25s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 2;
+    box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.08), 0 0 16px 0 rgba(0, 0, 0, 0.08);
+  }
+  
+  .custom-language-select-wrapper .custom-select.open .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+  
+  .custom-language-select-wrapper .custom-option {
+    position: relative;
+    display: block;
+    padding: 5px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #999999;
+    line-height: 30px;
+    cursor: pointer;
+    transition: all 0.25s;
+    border-bottom: solid 1px #222222;
+  }
+  
+  .custom-language-select-wrapper .custom-option:hover {
+    cursor: pointer;
+    background-color: #242828;
+  }
+  
+  .custom-language-select-wrapper .custom-option.selected {
+    color: #999999;
+    background-color: #0e0e0e;
+  }
+  
+  .custom-language-select-wrapper .arrow {
+    position: relative;
+    height: 11px;
+    width: 11px;
+  }
+  
+  .custom-language-select-wrapper .arrow::before,
+  .custom-language-select-wrapper .arrow::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 1px;
+    height: 100%;
+    transition: all 0.15s;
+  }
+  
+  .custom-language-select-wrapper .arrow::before {
+    left: -4px;
+    transform: rotate(-45deg);
+    background-color: #999999;
+  }
+  
+  .custom-language-select-wrapper .arrow::after {
+    left: 4px;
+    transform: rotate(45deg);
+    background-color: #999999;
+  }
+  
+  .custom-language-select-wrapper .open .arrow::before {
+    left: -4px;
+    transform: rotate(45deg);
+  }
+  
+  .custom-language-select-wrapper .open .arrow::after {
+    left: 4px;
+    transform: rotate(-45deg);
+  }
